@@ -1,0 +1,18 @@
+composer dump-autoload
+
+//seed created
+php artisan DB:seed
+
+//delete table and create schema
+php artisan migrate:fresh
+
+//create new migration table
+php artisan make:migration Roles
+
+//create new seeder 
+php artisan make:seeder UsersTable
+
+
+//for install laravel auth and ui
+composer require laravel/ui
+php artisan ui:auth
