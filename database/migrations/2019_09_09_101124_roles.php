@@ -15,11 +15,11 @@ class Roles extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('level');
             $table->string('name', 55);
             $table->date('info')->nullable();
             $table->time('createdAt');
-            $table->time('createdBy');
-            $table->boolean('validity');
+            $table->integer('createdBy');
         });
     }
 

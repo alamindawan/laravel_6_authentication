@@ -11,7 +11,7 @@ class UsersTable extends Seeder
      */
     public function run()
     {
-        $values = array('name' => 'dawan','email' => 'dawancse@gmail.com','password' => '123456');
+        $values = array('name' => 'dawan','level' => 1,'email' => 'dawancse@gmail.com','password' => '$2y$10$JZYeGzfHtX4RSE.vqmskeOBoHO933Lgvfo84va2pprZ3NQaClyzzm');
         DB::table('users')->insert($values);
     }
 }
