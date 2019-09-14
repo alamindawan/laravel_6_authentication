@@ -9,7 +9,7 @@ php artisan ui:auth
 <br>
 
 
-<b>Create New User:<b> AJAX form submit using
+<b>Create New User:</b> AJAX form submit using
 
 var formData = new FormData($('#formSubmit')[0]);
 <br>
