@@ -5,3 +5,10 @@
 composer require laravel/ui
 
 php artisan ui:auth
+
+
+
+
+Create New User: AJAX form submit using
+
+var formData = new FormData($('#formSubmit')[0]);
