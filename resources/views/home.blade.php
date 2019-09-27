@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-4">
                     <div id="example1">
-                        <a href="{{URL::to('customers')}}">Role Management</a>
+                        <a href="{{URL::to('roles')}}">Role Management</a>
                     </div>
                 </div>
                 <div class="col-md-4">

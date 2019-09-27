@@ -1,0 +1,43 @@
+
+
+create procedure insertRole(in name1 varchar(50),in level1 int(11),in createdAt1 time,in createdBy1 int(11)) 
+begin 
+insert into roles(name,`level`,createdAt,createdBy) values (name1,level1,createdAt1,createdBy1);
+end
+
+////get by id
+DELIMITER $$
+
+CREATE PROCEDURE getById(in id int(11))
+
+BEGIN
+select * from roles where roles.id = id;
+END $$
+
+///insert
+DELIMITER $$
+create procedure insertRole(in name1 varchar(50),in level1 int(11),in createdAt1 time,in createdBy1 int(11))
+
+begin
+insert into roles(name,`level`,createdAt,createdBy) values (name1,level1,createdAt1,createdBy1);
+end$$
+
+
+create PROCEDURE viewRoles()
+
+BEGIN
+select * from roles;
+END
+
+///delete
+DELIMITER $$
+
+CREATE PROCEDURE removeItem(in id int(11))
+
+BEGIN
+delete from roles where roles.id = id;
+END$$
+
+
+
+
